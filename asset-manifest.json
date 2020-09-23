@@ -1,0 +1,27 @@
+{
+  "files": {
+    "index.css": "./static/css/index.6520cfda.chunk.css",
+    "index.js": "./static/js/index.44932d0a.chunk.js",
+    "layouts.css": "./static/css/layouts.c068a8af.chunk.css",
+    "layouts.js": "./static/js/layouts.168f4a6b.chunk.js",
+    "main.js": "./static/js/main.193f8a84.chunk.js",
+    "runtime-main.js": "./static/js/runtime-main.6958c951.js",
+    "static/css/4.019fd36a.chunk.css": "./static/css/4.019fd36a.chunk.css",
+    "static/js/4.e123c7bd.chunk.js": "./static/js/4.e123c7bd.chunk.js",
+    "static/css/5.18b33e80.chunk.css": "./static/css/5.18b33e80.chunk.css",
+    "static/js/5.4b943e73.chunk.js": "./static/js/5.4b943e73.chunk.js",
+    "index.html": "./index.html",
+    "service-worker.js": "./service-worker.js",
+    "static/img/main.less": "./static/img/speed.cc229000.svg",
+    "static/img/maptalks.css": "./static/img/kedu.2adfe059.png",
+    "static/js/4.e123c7bd.chunk.js.LICENSE.txt": "./static/js/4.e123c7bd.chunk.js.LICENSE.txt",
+    "static/js/5.4b943e73.chunk.js.LICENSE.txt": "./static/js/5.4b943e73.chunk.js.LICENSE.txt",
+    "workbox-8a532145.js": "./workbox-8a532145.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6958c951.js",
+    "static/css/4.019fd36a.chunk.css",
+    "static/js/4.e123c7bd.chunk.js",
+    "static/js/main.193f8a84.chunk.js"
+  ]
+}
