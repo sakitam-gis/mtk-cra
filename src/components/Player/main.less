@@ -1,0 +1,208 @@
+@import '~@/styles/theme.less';
+
+:global {
+  .sakitam-player {
+    position: absolute;
+    bottom: 60px;
+    left: 130px;
+    right: 130px;
+    font-size: 12px;
+
+    &__layer {
+      position: relative;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      &-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        color: #fff;
+        line-height: 34px;
+        text-align: center;
+        background-color: @main-bg-color!important;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &-text {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+      }
+    }
+    &__menu {
+      position: relative;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      &-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: @main-bg-color!important;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          width: 16px;
+          height: 16px;
+          margin: -8px;
+          background-image: url("~@/assets/images/player/play.svg");
+          background-size: 100% 100%;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &-text {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+      }
+
+      .playing {
+        &:after {
+          background-image: url("~@/assets/images/player/pause.svg");
+        }
+      }
+    }
+    &__back {
+      position: relative;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      margin-left: 10px;
+      &-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: @main-bg-color!important;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          width: 16px;
+          height: 16px;
+          margin: -8px;
+          background-image: url("~@/assets/images/player/back.svg");
+          background-size: 100% 100%;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &-text {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+      }
+    }
+    &__next {
+      position: relative;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      &-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: @main-bg-color!important;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          width: 16px;
+          height: 16px;
+          margin: -8px;
+          background-image: url("~@/assets/images/player/next.svg");
+          background-size: 100% 100%;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &-text {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+      }
+    }
+    &__speed {
+      position: relative;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      margin-left: 10px;
+      &-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: @main-bg-color;
+
+        &:after {
+          content: ' ';
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          width: 16px;
+          height: 16px;
+          margin: -8px;
+          background-image: url('~@/assets/images/player/speed.svg');
+          background-size: 100% 100%;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &-text {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}

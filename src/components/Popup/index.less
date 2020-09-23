@@ -1,0 +1,62 @@
+@import '~@/styles/theme.less';
+
+:global {
+  .maptalks-ui {
+    .maptalks-msgBox {
+      border: none;
+      background: linear-gradient(349deg, #000000 0%, rgba(0, 30, 80, 0.7) 100%);
+      border-radius: 2px;
+      box-shadow: 0 4px 10px 0 rgba(66, 70, 86, 0.1);
+
+      h2 {
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 0;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 400;
+        padding: 10px 20px 0;
+      }
+
+      a.maptalks-close {
+        width: 14px;
+        height: 14px;
+        top: 14px;
+        right: 14px;
+        background: url('~@/assets/images/icon_clear.png') no-repeat;
+        background-size: 100% 100%;
+
+        &:hover {
+          background: url('~@/assets/images/icon_clear.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+
+      em.maptalks-ico {
+        display: none;
+      }
+
+      .maptalks-msgContent {
+        font-size: 12px;
+        color: #999;
+        letter-spacing: 0;
+        padding: 15px 20px 15px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .own-popup {
+    width: 120px;
+    border: none;
+    background: linear-gradient(349deg, #000000 0%, rgba(0, 30, 80, 0.7) 100%);
+    border-radius: 2px;
+    box-shadow: 0 4px 10px 0 rgba(66, 70, 86, 0.1);
+    color: #fff;
+  }
+}
+
+.title {
+  color: #ffffff;
+}

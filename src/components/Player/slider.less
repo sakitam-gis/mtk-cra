@@ -1,0 +1,111 @@
+:global {
+  .sakitam-slider {
+    position: relative;
+    display: inline-block;
+    margin: 0 40px 0 20px;
+    top: -8px;
+    width: calc(100% - 300px);
+
+    &-custom-label {
+      width: 4em;
+      margin-top: 0 !important;
+      padding-top: 1.5em;
+      text-align: center;
+      color: #fff;
+      font-variant: small-caps;
+      white-space: pre;
+      &.sakitam-slider-custom-label__break-line {
+        &:after {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 1.5em;
+          background: rgba(0, 0, 0, .333);
+          left: 50%;
+          width: 2px;
+          margin-left: -1px;
+        }
+      }
+    }
+
+    &-custom-step {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px #e8e8e8;
+      background-color: #fff;
+      &.active {
+        box-shadow: 0 0 0 2px #409eff;
+        background-color: #fff;
+      }
+    }
+
+    &-line {
+      position: absolute;
+      cursor: pointer;
+      width: 100%;
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, .333);
+        border-radius: 1em;
+        left: -2em;
+        height: .8em;
+        right: -2em;
+      }
+    }
+
+    &-handle {
+      position: absolute;
+      border-radius: 1em;
+      transition: 0.5s;
+      top: 0;
+      height: 1.4em;
+      width: 1.4em;
+      margin: -.3em -.7em;
+      background: #fff;
+      z-index: 5;
+      &:after {
+        content: attr(time);
+        bottom: 0;
+        display: table-cell;
+        opacity: 0;
+        left: 50%;
+        padding: .125em .75em;
+        background: rgba(0, 0, 0, .333);
+        color: #fff;
+        text-align: center;
+        line-height: 1.4em;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+    }
+
+    &__mark {
+      position: absolute;
+      top: .8em;
+      width: 4em;
+      text-align: center;
+      color: #fff;
+      font-variant: small-caps;
+      white-space: pre;
+      &.break-line {
+        &:after {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 1.5em;
+          background: rgba(0, 0, 0, .333);
+          left: 50%;
+          width: 2px;
+          margin-left: -1px;
+        }
+      }
+    }
+
+    .ant-slider-with-marks {
+      margin-bottom: 0;
+    }
+  }
+}

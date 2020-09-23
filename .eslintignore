@@ -1,0 +1,6 @@
+build/
+scripts/
+*.html
+node_modules
+coverage
+dist
