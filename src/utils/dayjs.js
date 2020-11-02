@@ -45,16 +45,16 @@ export function mockDataTime(startTime, endTime, options = {
     if (mid.isSameOrBefore(after)) {
       times.push({
         id: mid.format('YYYYMMDDHHmm'),
-        time: mid.format('HH:mm'),
+        time: mid.format('YYYY-MM-DD'),
         fullTime: mid,
-        formatTime: mid.format('YYYY.MM.DD HH:mm'),
+        formatTime: mid.format('YYYY.MM.DD'),
       });
     } else if (mid.isSameOrAfter(after) && options.paddingRight) {
       times.push({
         id: mid.format('YYYYMMDDHHmm'),
-        time: mid.format('HH:mm'),
+        time: mid.format('YYYY-MM-DD'),
         fullTime: mid,
-        formatTime: mid.format('YYYY.MM.DD HH:mm'),
+        formatTime: mid.format('YYYY.MM.DD'),
       });
     }
   }

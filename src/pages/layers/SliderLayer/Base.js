@@ -222,7 +222,7 @@ class Base extends React.Component {
     if (slider && slider.current) {
       // @ts-ignore
       const el = ReactDom.findDOMNode(slider.current);
-      const w = 38;
+      const w = 82;
       const len = this.times.length;
       const width = el.clientWidth;
       const rel = len * w;

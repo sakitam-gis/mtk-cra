@@ -78,8 +78,8 @@ class GridLayerCom extends Base {
     const date = dayjs();
     getDataList({
       dataType: params?.dataType,
-      startTime: date.format('YYYYMMDDHHmm'),
-      endTime: date.add(2, 'hour').format('YYYYMMDDHHmm'),
+      startTime: date.subtract(10, 'day'),
+      endTime: date,
     })
       .then(data => {
         this.times = data;

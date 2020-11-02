@@ -16,14 +16,9 @@ for (let r = 15; r <= 255; r += 30)
 
 console.log(colors.length);
 
-export async function getDataList () {
-  let startTime = dayjs();
-  const h = startTime.hour();
-  const relh = h - (h % 6);
-  startTime = startTime.hour(relh);
-  const endTime = startTime.add(7, 'd');
+export async function getDataList ({ startTime, endTime }) {
   const lists = mockDataTime(startTime, endTime, {
-    interval: 6 * 10 * 3,
+    interval: 6 * 10 * 24,
     paddingRight: true,
     paddingLeft: true,
   });
