@@ -52,6 +52,7 @@ function getRouteElement({ route, index, opts }) {
     sensitive: route.sensitive,
     path: route.path,
   };
+
   if (route.redirect) {
     return <Redirect {...routeProps} from={route.path} to={route.redirect} />;
   }

@@ -8,6 +8,18 @@ const Router = routerRedux.ConnectedRouter;
 
 const routes = [
   {
+    path: '/user',
+    component: loadable(() => import(/* webpackChunkName: "user" */ '../layout/User/index')),
+    routes: [
+      {
+        path: '/user/login',
+        component: loadable(() => import(/* webpackChunkName: 'user' */ '../pages/User/login')),
+        exact: true,
+        // redirect: '/home',
+      },
+    ],
+  },
+  {
     path: '/',
     component: loadable(() =>
       import(/* webpackChunkName: "layouts" */ '../layout/Main/index'),

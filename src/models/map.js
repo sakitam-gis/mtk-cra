@@ -1,12 +1,33 @@
+import { message } from 'antd';
+import { delay } from 'dva/saga';
+
+import { actionLogin } from '@/service';
+
 const MapModel = {
   namespace: 'map',
   state: {
     style: {},
     mapLoaded: false,
     globalHistory: {},
+    userData: {},
   },
 
   effects: {
+    *login({ callback, payload }, { call, put }) {
+      const data = yield call(actionLogin, payload);
+      message.success('success！');
+
+      yield call(delay, 100);
+      yield put({
+        type: 'updateUserData',
+        payload: data,
+      });
+      // eslint-disable-next-line no-unused-expressions
+      callback && callback(true);
+
+      // router.replace(redirect);
+    },
+
     *updateMapConfig({ callback, payload }, { put }) {
       yield put({
         type: 'updateMapStyle',
@@ -42,7 +63,10 @@ const MapModel = {
     },
     updateGlobalHistory (state, action) {
       state.globalHistory = action.payload;
-    }
+    },
+    updateUserData (state, action) {
+      state.userData = action.payload;
+    },
   },
 
   subscriptions: {

@@ -1,0 +1,47 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../styles/common.less';
+
+.loginMain {
+  width: 420px;
+  margin: 0 auto;
+  padding: 22px 32px;
+  background-size: 100% 100%;
+  @media screen and (max-width: @screen-sm) {
+    width: 90%;
+  }
+
+  .loginHeader {
+    position: relative;
+    top: -50px;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  .actionWarp {
+    height: 28px;
+    padding: 0 3px;
+    line-height: 28px;
+  }
+
+  .passwordAction {
+    float: right;
+    height: 28px;
+    color: #1890FF;
+    line-height: 28px;
+  }
+
+  .transformCenter();
+}

@@ -3,7 +3,7 @@
 // import sample from 'lodash/sample';
 // import request from '@/utils/request';
 import { createDB } from '@/utils/indexedDB';
-import dayjs, { mockDataTime } from '@/utils/dayjs';
+import { mockDataTime } from '@/utils/dayjs';
 // import { get as idbGet, set as idbSet } from 'idb-keyval';
 
 const CUSTOM_IDB = 'idb';
@@ -91,4 +91,20 @@ export async function addItem (id, params) {
 
 export async function cacheData () {
 
+}
+
+/**
+ * 用户名密码登录
+ * @param params
+ */
+export async function actionLogin(params) {
+  if (params.userName === 'custom' && params.password === '123456') {
+    return {
+      userType: '0'
+    }
+  } else if (params.userName === 'admin' && params.password === '123456') {
+    return {
+      userType: '1'
+    };
+  }
 }
